@@ -36,9 +36,8 @@ $ git clone https://github.com/amv42/sshd-honeypot
 ## Step 4: Run the installer
 
 The installer will populate all necessary files, configure OpenSSH and install the sshd-honeypot in the current working directory.
-
+```
 $ ./install.sh
-0```
 ```
 
 ## Step 5: Run the honeypot

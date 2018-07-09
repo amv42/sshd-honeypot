@@ -6,3 +6,5 @@ EXEC_BUILD="${CURRENT}/openssh-7.3p1/configure --prefix=${CURRENT}/openssh-7.3p1
 sudo $EXEC_BUILD
 make
 make install
+mv sshd sshd-honeypot
+

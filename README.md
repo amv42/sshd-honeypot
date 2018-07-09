@@ -1,17 +1,17 @@
 # sshd-honeypot
 
 The sshd-honeypot is a modified version of the OpenSSH deamon that forwards commands to Cowrie where all commands are interpreted and returned. The sshd-honeypot is designed to let Cowrie log brute force attacks and the shell interaction performed by the attacker. As the sshd-honeypot uses OpenSSH, it can not be fingerprinted based on protocol deviations or differences in error messages.
-
-+------------+     +-------------+     +------------+
-|  Attacker  |<--->|sshd-honeypot|<--->|   Cowrie   |
-|            |     |  (OpenSSH)  |     |            |
-+------------+     +-------------+     +------------+
-
+```
++------------+     +-------------+     +------------+  
+|  Attacker  |<--->|sshd-honeypot|<--->|   Cowrie   |  
+|            |     |  (OpenSSH)  |     |            |  
++------------+     +-------------+     +------------+  
+```
 
 
 # Installing the sshd-honeypot
 
-* [Step 1: Install cowrie-sshd](#step-1-cowrie-sshd)
+* [Step 1: Install cowrie-sshd](#step-1-install-cowrie-sshd)
 * [Step 2: Install dependencies](#step-2-install-dependencies)
 * [Step 3: Checkout the code](#step-3-checkout-the-code)
 * [Step 4: Run the installer](#step-4-run-the-installer)
@@ -53,7 +53,7 @@ The installer will populate all necessary files and configure/install the sshd-h
 $ ./install.sh
 ```
 
-## Step 5: Run the honeypot
+## Step 5: Start the honeypot
 
 ```
 $ cd openssh-7.3p1

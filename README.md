@@ -1,12 +1,16 @@
 # sshd-honeypot
 
-The sshd-honeypot is a modified version of the OpenSSH deamon that forwards commands to Cowrie where all commands are interpreted and returned. The sshd-honeypot is designed to let Cowrie log brute force attacks and the shell interaction performed by the attacker. As the sshd-honeypot uses OpenSSH, it can not be fingerprinted based on protocol deviations or differences in error messages.
+The sshd-honeypot is a modified version of the OpenSSH deamon that forwards commands to Cowrie where all commands are interpreted and returned. The sshd-honeypot is designed to let Cowrie log brute force attacks and the shell interaction performed by the attacker. As the sshd-honeypot uses OpenSSH, it can not be fingerprinted based on protocol deviations or differences in error messages [1].
 ```
 +------------+     +-------------+     +------------+  
 |  Attacker  |<--->|sshd-honeypot|<--->|   Cowrie   |  
 |            |     |  (OpenSSH)  |     |            |  
 +------------+     +-------------+     +------------+  
 ```
+
+ 
+[1] Bitter Harvest: Systematically Fingerprinting Low- and Medium-interaction Honeypots at Internet Scale,  
+Proceedings of the 12th USENIX Workshop on Offensive Technologies (WOOT ’18) [[PDF]](https://www.cl.cam.ac.uk/~amv42/papers/vetterl-clayton-bitter-harvest-woot-18.pdf)
 
 
 # Installing the sshd-honeypot

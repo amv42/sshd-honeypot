@@ -133,7 +133,6 @@ PermitTunnel no
 
 # override default of no subsystems
 #Subsystem sftp internal-sftp
-#Subsystem	sftp	/data/PhD/Projects/22_OpenSSH_honeypot_cowrie/openssh-7.3p1/sftp-server
 
 # Example of overriding settings on a per-user basis
 #Match User anoncvs

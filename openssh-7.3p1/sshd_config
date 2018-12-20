@@ -55,7 +55,7 @@ MaxAuthTries 6
 MaxSessions 10
 
 RSAAuthentication no
-PubkeyAuthentication yes
+PubkeyAuthentication no
 
 # The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2
 # but this is overridden so installations will only check .ssh/authorized_keys
